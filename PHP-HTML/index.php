@@ -36,7 +36,7 @@
 						</div>
 					<ul class="nav navbar-nav">
 						<li>
-							<a href="index.php"><h2>Accueil</h2></a>
+							<a href="index.php"><h2 id="test">Accueil</h2></a>
 						</li>
 						<li>
 							<a href="Discussion.php"><h2>Discussion</h2></a>
