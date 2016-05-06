@@ -11,7 +11,7 @@
 			<nav class="navbar navbar-inverse">
 				<div class="container-fluid">
 					<div class="navbar-header" >
-						<a class="navbar-brand" id="home" href="index.php" >
+						<a class="navbar-brand" id="home" href="index.php" ><h1>WikYnov</h1>
 							<img id="logo" src="logo-ynov.png">
 						</a>
 					</div
@@ -19,6 +19,14 @@
 						<div>
 							<button type="submit" class="btn btn-default navbar-btn" name="formconnect">Connexion</button>
 							<a href="connexion.php"><button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button></a>
+							<div id="searchbar">
+				                <form action="" class="formulaire">
+				               		<input class="champ" type="text" placeholder="Rechercher" />
+				                    <button type="button" class="btn btn-default btn" id="search">
+  										<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+									</button>
+				                </form>
+			                </div>
 							<?php
 				  		  		if(isset($erreur))
 				  		  		{
