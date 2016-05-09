@@ -36,16 +36,16 @@
 						</div>
 					<ul class="nav navbar-nav">
 						<li>
-							<a href="index.php"><h2 id="test">Accueil</h2></a>
+							<a href="index.php" id="test2"><h2 id="test">Accueil</h2></a>
 						</li>
 						<li>
-							<a href="Discussion.php"><h2>Discussion</h2></a>
+							<a href="Discussion.php" id="test2"><h2 id="test">Discussion</h2></a>
 						</li>
 						<li>
-							<a href="Theme.php"><h2>Thème<h2></a>
+							<a href="Theme.php" id="test2"><h2 id="test">Thème<h2></a>
 						</li>
 						<li>
-							<a href="Contact.php"><h2>Contact</h2></a>
+							<a href="Contact.php" id="test2"><h2 id="test">Contact</h2></a>
 						</li>
 					</ul>
 				</div>
