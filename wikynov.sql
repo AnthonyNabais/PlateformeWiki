@@ -43,7 +43,6 @@ CREATE TABLE IF NOT EXISTS `posts` (
 
 CREATE TABLE IF NOT EXISTS `users` (
 `id` int(4) NOT NULL,
-  `username` varchar(30) NOT NULL,
   `nom` varchar(40) NOT NULL,
   `prenom` varchar(40) NOT NULL,
   `password` varchar(255) NOT NULL,
