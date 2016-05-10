@@ -18,7 +18,7 @@
 					<form class="navbar-form navbar-right" method="POST" action="" >
 						<div>
 							<button type="submit" class="btn btn-default navbar-btn" name="formconnect">Connexion</button>
-							<a href="connexion.php"><button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button></a>
+							<a href="inscription.php"><button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button></a>
 							<div id="searchbar">
 				                <form action="" class="formulaire">
 				               		<input class="champ" type="text" placeholder="Rechercher" />

@@ -34,20 +34,22 @@
 				  		  		}
 				  		    ?>
 						</div>
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="index.php"><h2>Accueil</h2></a>
-						</li>
-						<li>
-							<a href="Discussion.php"><h2>Discussion</h2></a>
-						</li>
-						<li>
-							<a href="Theme.php"><h2>Thème<h2></a>
-						</li>
-						<li>
-							<a href="Contact.php"><h2>Contact</h2></a>
-						</li>
-					</ul>
+						<div class="navbar-collapse collapse" id="menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="index.php" id="test2"><h2 id="test">Accueil</h2></a>
+								</li>
+								<li>
+									<a href="Discussion.php" id="test2"><h2 id="test">Discussion</h2></a>
+								</li>
+								<li> 
+									<a href="Theme.php" id="test2"><h2 id="test">Thème<h2></a>
+								</li>
+								<li>
+									<a href="Contact.php" id="test2"><h2 id="test">Contact</h2></a>
+								</li>
+							</ul>
+					    </div>
 				</div>
 			</nav>
 		</div>
@@ -62,7 +64,7 @@
 
 			            	<tr>
 				            
-					            <td><label for="nom"><h4>Votre nom :</h4></label></td>
+					            <td><label for="nom"><h4>Votre Nom :</h4></label></td>
 					            <td><input type="text" placeholder="Votre Nom" name="nom" id="nom" value="<?php if(isset($nom)) {echo $nom;} ?>"/></td>
 				            
 				            </tr>
@@ -82,7 +84,7 @@
 				            
 				            <tr>
 					            
-					            <td><label for="mdp2"><h4>Confirmer Mot de Passe :</h4></label></td>
+					            <td><label for="mdp2"><h4> Confirmer Mot de Passe :</h4></label></td>
 					            <td><input type="password" placeholder="Confirmer Mot de Passe" name="mdp2" id="mdp2"/></td>
 
 					        </tr>
@@ -96,20 +98,16 @@
 			           		 <tr>
 			           		 		<td><label for="ecole"><h4>Choisir École :</h4></label></td>
 								    <td><form class="choisir" method="POST" action="" >
-									<select name="École" class="styled-select">
+									<select name="École" class="barre">
 										<option value="value0" selected disabled>École</option> 
 										<option value="Ingésup">Ingésup</option> 
 										<option value="ESSCA">ESSCA</option>
 										<option value="Infosup">Infosup</option>
-										<option value="LIMMART">LIMMART</option>
+										<option value="LIMMART">Lim'art</option>
 									</select>
 									</form></td>
 							</tr>
-
-			           		 	<td></td>
-			           		 	<td><input type="submit" name="forminscription" value="S'inscrire"></td>
-			           		 	<td></td>
-			           		 	<td><a href="index.php">Retourner à l'accueil</a></td>
+			           		 	<td><input type="submit" name="forminscription" value="S'inscrire" id="inscrire"></td>
 			           		 </tr>
 				            
 				            </table>
