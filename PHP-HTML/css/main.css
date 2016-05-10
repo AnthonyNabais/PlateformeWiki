@@ -39,9 +39,9 @@ button.btn.btn-default.navbar-btn{
 	margin-top: 1%;
 }
 ul.nav.navbar-nav{
-	margin-left: 30%;
-	margin-top: 2%;
-	height: 120px;
+	margin-left: 22%;
+	margin-top: 10%;
+	height: 100px;
 }
 nav.navbar.navbar-inverse{
 	height: 120px;
@@ -72,6 +72,29 @@ div#searchbar{
 }
 button#search.btn.btn-default{
 	width: 35px;
+}
+.formulaire1{
+	position: relative;
+	width: 35%;
+	height: 400px;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-right: auto;
+	margin-left: auto;
+	background-color: lightgray;
+	border: 1px solid dimgrey;
+	text-align: center;
+	background-size: cover;
+}
+h2{
+	margin-bottom: 5%;
+}
+label{
+	margin-right: 2%;
+}
+form{
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 0;
 }
 @media screen and (max-width: 400px){
 	#footer{
@@ -225,6 +248,7 @@ button#search.btn.btn-default{
 @media screen and (min-width: 1101px) and (max-width: 1165px){
 	h2#test{
 		margin-top: 2%;
+		margin-right: 5%;
 	}
 	ul.nav.navbar-nav{
 		margin-top: 1%;
@@ -233,7 +257,7 @@ button#search.btn.btn-default{
 @media screen and (min-width: 1101px) and (max-width: 1184px){
 	#searchbar{
 		margin-top: 6.5%;
-		margin-left: 79%;
+		margin-left: 81%;
 		width: 170px;
 	}
 }
@@ -267,7 +291,7 @@ button#search.btn.btn-default{
 		width: 35px;
 	}
 	input.champ{
-		width: 170px;
+		width: 150px;
 	}
 	form.formulaire{
 		width: 210px;

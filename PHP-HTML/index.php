@@ -34,20 +34,23 @@
 				  		  		}
 				  		    ?>
 						</div>
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="index.php" id="test2"><h2 id="test">Accueil</h2></a>
-						</li>
-						<li>
-							<a href="Discussion.php" id="test2"><h2 id="test">Discussion</h2></a>
-						</li>
-						<li>
-							<a href="Theme.php" id="test2"><h2 id="test">Thème<h2></a>
-						</li>
-						<li>
-							<a href="Contact.php" id="test2"><h2 id="test">Contact</h2></a>
-						</li>
-					</ul>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="index.php" id="test2"><h2 id="test">Accueil</h2></a>
+								</li>
+								<li>
+									<a href="Discussion.php" id="test2"><h2 id="test">Discussion</h2></a>
+								</li>
+								<li> 
+									<a href="Theme.php" id="test2"><h2 id="test">Thème<h2></a>
+								</li>
+								<li>
+									<a href="Contact.php" id="test2"><h2 id="test">Contact</h2></a>
+								</li>
+							</ul>
+						</div>
+					</form>
 				</div>
 			</nav>
 		</div>

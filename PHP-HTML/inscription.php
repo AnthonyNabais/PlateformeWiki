@@ -18,7 +18,7 @@
 					<form class="navbar-form navbar-right" method="POST" action="" >
 						<div>
 							<button type="submit" class="btn btn-default navbar-btn" name="formconnect">Connexion</button>
-							<a href="connexion.php"><button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button></a>
+							<a href="inscription.php"><button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button></a>
 							<div id="searchbar">
 				                <form action="" class="formulaire">
 				               		<input class="champ" type="text" placeholder="Rechercher" />
@@ -50,6 +50,73 @@
 					</ul>
 				</div>
 			</nav>
+		</div>
+		<div class="contenu">
+				<div class="formulaire1">
+					<form  method="POST" action="">
+	        
+			            <table>
+
+			            	<p><h2>Informations du Compte</h2></p>
+
+
+			            	<tr>
+				            
+					            <td><label for="nom"><h4>Votre nom :</h4></label></td>
+					            <td><input type="text" placeholder="Votre Nom" name="nom" id="nom" value="<?php if(isset($nom)) {echo $nom;} ?>"/></td>
+				            
+				            </tr>
+
+				            <tr>
+				            
+					            <td><label for="prenom"><h4>Votre Prenom :</h4></label></td>
+					            <td><input type="text" placeholder="Votre Prenom" name="prenom" id="prenom" value="<?php if(isset($prenom)) {echo $prenom;} ?>"/></td>
+				            
+				            </tr>
+				            
+				            <tr>
+				            
+					            <td><label for="mdp"><h4>Mot de Passe :</h4></label></td>
+					            <td><input type="password" placeholder="Mot de Passe" name="mdp" id="mdp"/></td>
+			           		 </tr>
+				            
+				            <tr>
+					            
+					            <td><label for="mdp2"><h4>Confirmer Mot de Passe :</h4></label></td>
+					            <td><input type="password" placeholder="Confirmer Mot de Passe" name="mdp2" id="mdp2"/></td>
+
+					        </tr>
+
+					         <tr>
+				            
+					            <td><label for="mail"><h4>Adresse Mail :</h4></label></td>
+					            <td><input type="email" placeholder="Adresse Mail" name="mail" id="mail" value="<?php if(isset($mail)) {echo $mail;} ?>"/></td>
+			           		 </tr>
+
+			           		 <tr>
+			           		 		<td><label for="ecole"><h4>Choisir École :</h4></label></td>
+								    <td><form class="choisir" method="POST" action="" >
+									<select name="École" class="styled-select">
+										<option value="value0" selected disabled>École</option> 
+										<option value="Ingésup">Ingésup</option> 
+										<option value="ESSCA">ESSCA</option>
+										<option value="Infosup">Infosup</option>
+										<option value="LIMMART">LIMMART</option>
+									</select>
+									</form></td>
+							</tr>
+
+			           		 	<td></td>
+			           		 	<td><input type="submit" name="forminscription" value="S'inscrire"></td>
+			           		 	<td></td>
+			           		 	<td><a href="index.php">Retourner à l'accueil</a></td>
+			           		 </tr>
+				            
+				            </table>
+				    
+			        
+			  		  </form>
+			  	</div>
 		</div>
 	 	<footer>
 				<div id="footer">
