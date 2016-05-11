@@ -12,7 +12,7 @@
 				<div class="container-fluid">
 					<div class="navbar-header" >
 						<a class="navbar-brand" id="home" href="index.php" ><h1>WikYnov</h1>
-							<img id="logo" src="logo-ynov.png">
+							<img id="logo" src="images/logo-ynov.png">
 						</a>
 					</div
 					<form class="navbar-form navbar-right" method="POST" action="" >

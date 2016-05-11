@@ -12,7 +12,7 @@
 				<div class="container-fluid">
 					<div class="navbar-header" >
 						<a class="navbar-brand" id="home" href="index.php" ><h1>WikYnov</h1>
-							<img id="logo" src="logo-ynov.png">
+							<img id="logo" src="images/logo-ynov.png">
 						</a>
 					</div
 					<form class="navbar-form navbar-right" method="POST" action="" >
@@ -51,6 +51,50 @@
 				</div>
 			</nav>
 		</div>
+		<div class="greyBackground">
+		<div class="container2">
+			<h5 id="contact1">Contactez-nous</h1>
+			<h2 id="contact2">Pour toute demande d'information, n'hésitez pas à nous contacter.</h2>
+			<div class="formulaire3">
+				<br>
+					<div class="row" id="nop">
+						<div class="col-md-3">
+							<label for="first_name">Prénom</label>
+							<br /><input id="first_name" type="text" name="first_name" class= "form-control"/>
+						</div>
+						<div class="col-md-3">
+							<label for="last_name">Nom</label>
+							<br />
+							<input id="last_name" type="text" name="last_name" class= "form-control" />
+						</div>
+					</div>
+					<br>
+					<div class="row" id="nop2">
+						<div class="col-md-3">
+							<label for="email_address">Adresse Mail</label>
+							<br /><input type="text" name="email_address" class= "form-control"/>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<label for="message" id="non">Votre Message</label>
+							<br />									
+							<textarea name="message" cols="80" rows="5" class="form-control" ></textarea>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<div></div>
+							<p class="text-center">
+								<input type="submit" value="Envoyer" class="envoyer" />
+							</p>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
 	 	<footer>
 				<div id="footer">
 					<div class="container">

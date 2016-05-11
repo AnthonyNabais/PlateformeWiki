@@ -12,7 +12,7 @@
 				<div class="container-fluid">
 					<div class="navbar-header" >
 						<a class="navbar-brand" id="home" href="index.php" ><h1>WikYnov</h1>
-							<img id="logo" src="logo-ynov.png">
+							<img id="logo" src="images/logo-ynov.png">
 						</a>
 					</div
 					<form class="navbar-form navbar-right" method="POST" action="" >
@@ -99,7 +99,7 @@
 			           		 		<td><label for="ecole"><h4>Choisir École :</h4></label></td>
 								    <td><form class="choisir" method="POST" action="" >
 									<select name="École" class="barre">
-										<option value="value0" selected disabled>École</option> 
+										<option value="value0" selected disabled></option> 
 										<option value="Ingésup">Ingésup</option> 
 										<option value="ESSCA">ESSCA</option>
 										<option value="Infosup">Infosup</option>
@@ -111,8 +111,6 @@
 			           		 </tr>
 				            
 				            </table>
-				    
-			        
 			  		  </form>
 			  	</div>
 		</div>
