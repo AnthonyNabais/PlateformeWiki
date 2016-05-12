@@ -11,14 +11,13 @@
 			<nav class="navbar navbar-inverse">
 				<div class="container-fluid">
 					<div class="navbar-header" >
-						<a class="navbar-brand" id="home" href="index.php" ><h1>WikYnov</h1>
+						<a class="navbar-brand" id="home" href="accueil.php" ><h1>WikYnov</h1>
 							<img id="logo" src="images/logo-ynov.png">
 						</a>
 					</div
 					<form class="navbar-form navbar-right" method="POST" action="" >
 						<div>
-							<button type="submit" class="btn btn-default navbar-btn" name="formconnect">Connexion</button>
-							<a href="inscription.php"><button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button></a>
+							<button type="submit" class="btn btn-default navbar-btn" name="formconnect" onclick="self.location.href='index.php'">Déconnexion</button>
 							<div id="searchbar">
 				                <form action="" class="formulaire">
 				               		<input class="champ" type="text" placeholder="Rechercher" />
@@ -37,7 +36,7 @@
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
 								<li>
-									<a href="index.php" id="test2"><h2 id="test">Accueil</h2></a>
+									<a href="accueil.php" id="test2"><h2 id="test">Accueil</h2></a>
 								</li>
 								<li>
 									<a href="Discussion.php" id="test2"><h2 id="test">Discussion</h2></a>
