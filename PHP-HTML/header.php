@@ -17,7 +17,7 @@
 					</div
 					<form class="navbar-form navbar-right" method="POST" action="" >
 						<div>
-							<button type="submit" class="btn btn-default navbar-btn" name="formconnect" onclick="self.location.href='index.php'">Déconnexion</button>
+							<a href="deconnexion.php"><button type="submit" class="btn btn-default navbar-btn" name="formconnect">Me Déconnecter</button></a>
 							<div id="searchbar">
 				                <form action="" class="formulaire">
 				               		<input class="champ" type="text" placeholder="Rechercher" />
@@ -39,10 +39,10 @@
 									<a href="accueil.php" id="test2"><h2 id="test">Accueil</h2></a>
 								</li>
 								<li>
-									<a href="Discussion.php" id="test2"><h2 id="test">Discussion</h2></a>
+									<a href="Discussion.php" id="test2"><h2 id="test">Poster Article</h2></a>
 								</li>
 								<li> 
-									<a href="Theme.php" id="test2"><h2 id="test">Thème<h2></a>
+									<a href="Theme.php" id="test2"><h2 id="test">Thèmes<h2></a>
 								</li>
 								<li>
 									<a href="Contact.php" id="test2"><h2 id="test">Contact</h2></a>

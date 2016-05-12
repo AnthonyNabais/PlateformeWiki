@@ -13,13 +13,14 @@
 	background-color: lightgray;
 	border: 1px solid dimgrey;
 	margin-left: 52%;
-	margin-top: -15.6%;
+	margin-top: -15%;
 
 }
 #rigolo{
 	margin-left: 10%;
 	margin-top: 13.3%;
 	margin-bottom: 5%;
+	color: #FF1647;
 }
 #portail2{
 	font-size: 4em;
@@ -57,7 +58,6 @@ input.meh2{
 	margin-bottom: 10%;
 	width: 160px;
 }
-
 .header{
 	background-size: cover;
 	margin-top: 0;
@@ -68,7 +68,8 @@ input.meh2{
 	position: absolute;
 	height: 170px;
 	width: 100%;
-	margin-bottom: 0;
+	margin-top: 0;
+	margin-top: 7%;
 }
 h5{
 	color: #169;	
@@ -90,12 +91,11 @@ h1{
 	margin-top: -8%;
 }
 #logo2{
-	font-size: 4em;
-	margin-left: 2%;
-	margin-top: -25%;
+	width: 120px;
+	margin-left: 1%;
+	margin-top: -23%;
 	float: left;
 	position: absolute;
-	margin-right: 0%;
 }
 #logo{
 	float: left;
@@ -111,12 +111,13 @@ button.btn.btn-default.navbar-btn{
 	margin-top: 2%;
 	background-color: #FF1647;
 	border-color: #FF1647; 
+	color: black;
 	border-style: solid;  
 	border-width: 1px;  
 	font-size: 1.2em;
 }
 ul.nav.navbar-nav{
-	margin-left: 33%;
+	margin-left: 31%;
 	margin-top: 0;
 	height: 120px;
 	width: 65%;
@@ -136,7 +137,7 @@ nav.navbar.navbar-inverse{
 	height: 30px;
 }
 input.champ{
-	margin-left: 5%;
+	margin-left: 12%;
 	width: 140px;
 }
 span.glyphicon.glyphicon-search::before{
@@ -153,6 +154,8 @@ button#search.btn.btn-default{
 }
 a#test2{
 	width: 100%;
+	color: #FF1647;
+	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 form.formulaire{
 	margin-top: 5%;
@@ -192,20 +195,37 @@ select.barre{
 	width: 60%;
 	height: 26px;
 }
+select.barre1{
+	height: 30px;
+}
 
 #inscrire{
 	width: 200px;
 	height: 34px;
 	text-align: center;
 	font-size: 1.5em;
-	background-color: orange;
-	border-color: orange; 
+	background-color: #FF1647;
+	border-color: #FF1647; 
 	border-style: solid;  
 	border-width: 1px;   
 	color: #ffffff;      
 	font-weight: normal;
 	margin-top: 20%;
-	margin-left: 40%;
+	margin-left: 5%;
+}
+#inscrire2{
+	width: 200px;
+	height: 34px;
+	text-align: center;
+	font-size: 1.5em;
+	background-color: #FF1647;
+	border-color: #FF1647; 
+	border-style: solid;  
+	border-width: 1px;   
+	color: #ffffff;      
+	font-weight: normal;
+	margin-top: 20%;
+	margin-left: 10%;
 }
 #special{
 	color: #FF1647;
@@ -215,15 +235,52 @@ select.barre{
 h4{
 	width: 205px;
 }
+#idk{
+	color: #FF1647;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: 1.5em;
+}
+h6{
+	font-size: 2em;
+	color: black;
+	width: 120%;
+}
+#machin{
+	border: 1px solid black;
+	text-align: center;
+	margin-bottom: 2%;
+}
+h3{
+	color: #FF1647;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: 2.5em;
+}
+#moi{
+	color: #FF1647;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: 2.5em;
+	margin-top: 5%;
+}
 .contenuhome{
 	width: 80%;
-	height: 600px;
+	height: 530px;
 	background-color: lightgray;
 	border: 1px solid dimgrey;
 	text-align: center;
 	background-size: cover;
 	margin-top: 10%;
 	margin-bottom: 4%;
+	margin-left: 11%;
+}
+.contenuhome1{
+	width: 80%;
+	height: 300px;
+	background-color: lightgray;
+	border: 1px solid dimgrey;
+	text-align: center;
+	background-size: cover;
+	margin-top: 15%;
+	margin-bottom: 15%;
 	margin-left: 11%;
 }
 .contenuhome2{
@@ -250,20 +307,22 @@ button#machin.navbar-toggle.collapsed{
 	color: #FF1647;
 }
 .envoyer{
-width: 200px;
-height: 34px;
-text-align: center;
-font-size: 1.5em;
-background-color: orange;
-border-color: orange; 
-border-style: solid;  
-border-width: 1px;   
-color: #ffffff;      
-font-weight: normal;    
+	width: 200px;
+	height: 34px;
+	text-align: center;
+	font-size: 1.5em;
+	background-color: #FF1647;
+	border-color: #FF1647;  
+	border-style: solid;  
+	border-width: 1px;   
+	color: #ffffff;      
+	font-weight: normal; 
+	margin-bottom: 1%;   
 }
 #contact2{
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	color: #FF1647;
+	margin-bottom: 1%;
 }
 .formulaire3{
 	border: 1px solid dimgrey;
@@ -274,8 +333,39 @@ font-weight: normal;
 	margin-top: 2%;
 	margin-bottom: 5%;
 }
+.formulaire4{
+	border: 1px solid dimgrey;
+	background-color: lightgray;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 8%;
+	margin-bottom: 5%;
+	padding-bottom: 2%;
+}
+#auteur{
+	text-align: center;
+}
+#first{
+	margin-left: 2%;
+}
+#deuz{
+	text-align: center;
+	margin-left: 11%;
+}
+#tres{
+	text-align: center;
+	margin-top: 3%;
+}
+#title{
+	height: 35px;
+}
+
 .greyBackground{
 	text-align: center;
+}
+.PJ{
+	margin-left: 35%;
+	margin-bottom: 2%;
 }
 #non{
 	width: 86%;
@@ -292,6 +382,10 @@ textarea.form-control{
 	width: 70%;
 	margin-left: 15%;
 }
+textarea.form-control2{
+	width: 70%;
+	height: 150px;
+}
 #grand{
 	width: 180px;
 }
@@ -299,11 +393,10 @@ textarea.form-control{
 	width: 180px;
 	margin-right: 40%;
 }
-#first_name{
+#prenom{
 	width: 180px;
-	text-align: center;
 }
-#last_name{
+#nom{
 	width: 180px;
 }
 

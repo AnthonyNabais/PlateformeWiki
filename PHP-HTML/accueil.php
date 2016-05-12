@@ -8,10 +8,9 @@
 	</head>
 	<body>
 		<?php include("header.php"); ?>
-		<div class="contenuhome">
-		<h3>Bienvenue sur  WikYnov le tout nouveau Wiki créé et réservé exclusivement aux étudiants Ynov. Il vous sera donc possible de visualiser et de partager des articles entre étudiants et plein d'autres trucs.</h3>
+		<div class="contenuhome1">
+		<h3 id="moi">Bienvenue sur WikYnov le tout nouveau Wiki créé et réservé exclusivement aux étudiants Ynov. Vous pouvez visualiser et poster vos propres articles selon les thèmes proposés, et les partager avec les autres étudiants. Si vous avez des questions, n'hésitez pas à nous les poser en allant sur Contact.</h3>
 		</div>
 	 	<?php include("footer.php"); ?>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</body>
 </html>

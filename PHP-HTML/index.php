@@ -1,3 +1,39 @@
+<?php
+session_start();
+
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=wikynov', 'root', 'root');
+
+
+if(isset($_POST['formconnect']))
+{
+    $mailconnect = htmlspecialchars($_POST['mailconnect']);
+    $mdpconnect = sha1($_POST['mdpconnect']);
+    if(!empty($mailconnect) AND !empty($mdpconnect))
+    {
+        $requser = $bdd->prepare("SELECT * FROM users WHERE mail = ? AND mdp = ?");
+        $requser->execute(array($mailconnect, $mdpconnect));
+        $userexist = $requser->rowCount();
+        if($userexist == 1)
+        {
+            $userinfo = $requser->fetch();
+            $_SESSION['id'] = $userinfo['id'];
+            $_SESSION['prenom'] = $userinfo['prenom'];
+            $_SESSION['mail'] = $userinfo['mail'];
+            header("Location: accueil.php?id=".$_SESSION['id']);
+        }
+        else
+        {
+            $erreur = "mail ou mot de passe invalide";
+        }
+    }
+    else
+    {
+        $erreur = "Vous devez rentrer votre mail et votre mot de passe";
+    }
+}
+
+?>
+
 <!doctype html>
 <html lang="fr">
     <head>
@@ -14,16 +50,16 @@
         <h1 id="titre">WikYnov</h1>
         <form class="portail-bt" method="POST" action="" >
             <div class="connect">
-                <input class="meh" type="text" placeholder="Adresse Mail" />
-                <input class="meh2" type="text" placeholder="Mot de Passe" />
+                <input type="text" class="meh" placeholder="Adresse Mail" name="mailconnect">
+                <input type="password" class="meh2" placeholder="Mot de Passe" name="mdpconnect">
                 <br>
-                <button type="submit" class="btns" name="formconnect" onclick="self.location.href='accueil.php'">Connexion</button>
+                <button type="submit" class="btns" name="formconnect">Connexion</button>
             </div>
             <div class="inscript">
                 <h2 id="rigolo">Pas de compte? Inscrivez vous !</h2>
-                <button type="submit" class="btns" name="formconnect" onclick="self.location.href='inscription.php'">Inscription</button>
+                
+                    <a href="inscription.php"><input type="button" class="btns" value="Inscription" id="publier2"/></a>
             </div>
         </form>
     </div>
-    </body>
-</html>
+    <?php include("footer.php"); ?>
