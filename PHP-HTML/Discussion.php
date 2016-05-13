@@ -1,3 +1,46 @@
+<?php
+session_start();
+
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=wikynov', 'root', 'root');
+
+if(isset($_GET['id']) AND $_GET['id'] > 0)
+{
+	$getid = intval($_GET['id']);
+	$requser = $bdd->prepare('SELECT * FROM users WHERE id = ?');
+	$requser->execute(array($getid));
+	$userinfo = $requser->fetch();
+
+}
+if(isset($_POST['Envoyer']))
+{
+	$titre = htmlspecialchars($_POST['titre']);
+	$message = htmlspecialchars($_POST['message']);;
+	if(!empty($_POST['titre']) AND !empty($_POST['message']))
+	{
+						
+						$insertmbr = $bdd->prepare("INSERT INTO posts(titre, message) VALUES (?, ?)");
+						$insertmbr->execute(array($titre, $message));
+						$good = "Votre article a bien été posté !";
+		
+	}
+	else
+	{
+		$erreur = "Rentrez un titre et une description";
+	}
+}
+class FileFromDB {
+private $filename;
+public function __construct($filename) {
+$this->filename = $filename;
+}
+}
+$message = null;
+if (isset($_FILES['myFile'])) {
+$File = new FileFromDB($_FILES['myFile']['name']);
+$File->upload($_FILES['myFile']);
+$message = 'Votre fichier à bien été ajouté';
+}
+?>
 <!doctype html>
 <html lang="fr">
 	<head>
@@ -26,33 +69,28 @@
 									</form>
 						</div>
 						<div class="col-md-5" id="deuz">
-
 							<label for="titre"><h3>Titre :</h3></label>
-							<input type="text" name="titre" class= "form-control" id="title"
-							value="<?php echo isset($_SESSION['inputs']['titre'])? $_SESSION['inputs']['titre'] : ''; ?>"/>
+							<input type="text" name="titre" class= "form-control" id="title" value="<?php if(isset($titre)) {echo $titre;} ?>"/>
+						</div>
+						<div class="row">
+							<div class="col-md-12" id="tres">
+								<label for="message" id="non2"><h3>Description :</h3></label>
+								<br />									
+								<textarea name="message" cols="80" rows="5" class="form-control2" value="<?php if(isset($message)) {echo $message;} ?>"></textarea>
+							</div>
+						</div>
+						<div class="PJ">
+							<input type="file" -file upload control />
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="text-center">
+									<input type="submit" name="Envoyer" value="Envoyer" class="envoyer" />
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-12" id="tres">
-							<label for="message" id="non2"><h3>Description :</h3></label>
-							<br />									
-							<textarea name="message" cols="80" rows="5" class="form-control2" >
-							<?php echo isset($_SESSION['inputs']['message'])? $_SESSION['inputs']['message'] : ''; ?></textarea>
-						</div>
-					</div>
-					<div class="PJ">
-					<input type="file" -file upload control></input>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-md-12">
-							<div></div>
-							<p class="text-center">
-								<input type="submit" value="Envoyer" class="envoyer" />
-							</p>
-						</div>
-					</div>
-			</div>
 		</div>
 	 	<?php include("footer.php"); ?>
 	</body>

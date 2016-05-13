@@ -14,27 +14,27 @@
 				<table class="col-md-8 .col-md-offset-3">
 					<tr id="machin">
 						<td><h6>Certifications</h6></td>
-						<td><img src="images/logo-ynov.png"></td>
+						<td><a href="certification.php"><img src="images/certification.png"></a></td>
 					</tr>
 					<tr id="machin">
 						<td><h6>Partiels</h6></td>
-						<td><img src="images/logo-ynov.png"></td>
+						<td><a href="certification.php"><img src="images/partiels.png"></a></td>
 					</tr>
 					<tr id="machin">
 						<td><h6>Projets</h6></td>
-						<td><img src="images/logo-ynov.png"></td>
+						<td><a href="projets.php"><img src="images/projets.png"></a></td>
 					</tr>
 					<tr id="machin">
 						<td><h6>Exercices</h6></td>
-						<td><img src="images/logo-ynov.png"></td>
+						<td><a href="certification.php"><img src="images/exercices.png"></a></td>
 					</tr>
 					<tr id="machin">
 						<td><h6>Startup Day</h6></td>
-						<td><img src="images/logo-ynov.png"></td>
+						<td><a href="projets.php"><img src="images/startupday.png"></a></td>
 					</tr>
 					<tr id="machin">
 						<td><h6>Documentations</h6></td>
-						<td><img src="images/logo-ynov.png"></td>
+						<td><a href="certification.php"><img src="images/documentations.png"></a></td>
 					</tr>
 				</table>
 			</div>

@@ -9,7 +9,7 @@
 	<body>
 		<?php include("header.php"); ?>
 		<div class="contenuhome1">
-		<h3 id="moi">Bienvenue sur WikYnov le tout nouveau Wiki créé et réservé exclusivement aux étudiants Ynov. Vous pouvez visualiser et poster vos propres articles selon les thèmes proposés, et les partager avec les autres étudiants. Si vous avez des questions, n'hésitez pas à nous les poser en allant sur Contact.</h3>
+			<h7 id="moi">Bienvenue sur WikYnov le tout nouveau Wiki créé et réservé exclusivement aux étudiants Ynov. Vous pouvez visualiser et poster vos propres articles selon les thèmes proposés, et les partager avec les autres étudiants. Si vous avez des questions, n'hésitez pas à nous les poser en allant sur Contact.</h7>
 		</div>
 	 	<?php include("footer.php"); ?>
 	</body>
